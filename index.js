@@ -1,2 +1,8 @@
-console.log("Hello World");
-console.log("My name is big")
+var i = 0 ;
+var t = setInterval(()=>{
+    console.log(`i = ${i}`)
+    i++
+    if(i === 5 ){
+        clearTimeout(t)
+    }
+},1000)
